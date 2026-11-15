@@ -1,0 +1,40 @@
+{
+  "search_sources": {
+    "type": "template_list",
+    "description": "搜索源列表",
+    "hint": "点「添加更多」增加一个搜索源。填了名称后，它会自动出现在「网页搜索提供商」下拉框里。地址填什么就自动识别格式。",
+    "templates": {
+      "custom_source": {
+        "name": "搜索源",
+        "hint": "添加一个搜索 API 或自部署 SearXNG",
+        "display_item": "name",
+        "items": {
+          "name": {
+            "description": "源名称",
+            "type": "string",
+            "default": "",
+            "hint": "填什么就出现在下拉框里，比如 searxng / tavily / bocha"
+          },
+          "url": {
+            "description": "地址",
+            "type": "string",
+            "default": "",
+            "hint": "SearXNG 填 http://127.0.0.1:8088；Tavily 填 https://api.tavily.com/search；博查填 https://api.bochaai.com/v1/web-search；Brave 填 https://api.search.brave.com/res/v1/web/search；智谱填 https://open.bigmodel.cn/api/paas/v4/web_search。地址留空时按源名自动匹配默认地址。"
+          },
+          "key": {
+            "description": "API Key",
+            "type": "string",
+            "default": "",
+            "secret": true
+          },
+          "extra": {
+            "description": "额外参数 (JSON)",
+            "type": "text",
+            "default": "{}",
+            "hint": "附加请求参数，JSON 格式，不需要则留 {}"
+          }
+        }
+      }
+    }
+  }
+}

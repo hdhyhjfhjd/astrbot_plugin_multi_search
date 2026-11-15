@@ -1,0 +1,9 @@
+name: astrbot_plugin_multi_search
+display_name: 多源搜索
+short_desc: 接入 SearXNG/Tavily/博查/Brave/智谱多源搜索，原生下拉框一键切换
+desc: 为 AstrBot 接入多源联网搜索。支持自部署 SearXNG、Tavily、博查(Bocha)、Brave、智谱五种搜索后端，在「网页搜索提供商」下拉框选择即可切换，每个源的 Key/地址在插件配置面板填写。
+author: hdhyhjfhjd
+version: 1.0.0
+repo: https://github.com/hdhyhjfhjd/astrbot_plugin_multi_search
+license: MIT
+astrbot_version: ">=4.0.0"
